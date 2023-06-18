@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+section header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+section header ul li a {
+  text-decoration: none;
+  color: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+}
+section header ul li button {
+  border-radius: 4px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  padding: 8px 14px;
+  font-weight: 400;
+}
+section header ul li a:hover {
+  text-decoration: underline;
+}
+section header ul li button:hover {
+  background-color: #1b63c1;
+  cursor: pointer;
+}
+section .container {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .container .searchbox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+section .container .searchbox .searchbar {
+  width: 100%;
+  padding: 13px;
+  padding-left: 44px;
+  padding-right: 60px;
+  border-radius: 24px;
+  outline: none;
+  border: 1px solid #dfe1e5;
+  font-size: 16px;
+}
+section .container .searchbox .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 12px 20px;
+  pointer-events: none;
+  align-items: center;
+  justify-content: space-between;
+}
+section .container .btn {
+  margin-top: 20px;
+}
+section .container .btn button {
+  margin: 0px 5px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px solid transparent;
+}
+section .container .btn button:hover {
+  background-color: #ccc;
+}
+section .container .gofr {
+  margin-top: 20px;
+}
+section .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+section .footer .privacyp {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+section .footer .privacyp ul {
+  display: flex;
+}
+section .footer .privacyp ul li {
+  list-style: none;
+}
+section .footer .privacyp ul li a {
+  text-decoration: none;
+  color: #70757a;
+  font-size: 14px;
+  margin-right: 25px;
+}
+section .footer .privacyp ul li a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:768px){
+  section .container .searchbox{
+    width: 95%;
+  }
+  section .footer .privacyp ul{
+    display: block;
+    padding-left: 15px;
+  }
+}
